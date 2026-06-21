@@ -261,6 +261,9 @@ h3 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: .02em; }
 .prose p { margin-bottom: 16px; color: #3c4148; }
 .prose ul { margin: 0 0 16px 22px; color: #3c4148; }
 .prose li { margin-bottom: 8px; }
+/* safeguard: prose text on dark panels always stays light & readable */
+.section--dark .prose p, .section--dark .prose ul, .section--dark .prose li { color: #d8dce1; }
+.section--dark .prose a { color: #ffb27a; }
 
 /* ---------- skip link ---------- */
 .skip { position: absolute; left: -999px; top: 0; background: var(--hi);
